@@ -10,19 +10,36 @@
 <body>
     <!-- Navigation Bar -->
         <div class="w3-top w3-bar w3-black">
-            <a href="#home" class="w3-bar-item w3-mobile"> Home </a>
-            <a href="#pomodorotechnique" class="w3-bar-item w3-mobile"> Pomodoro Technique </a>
-            <a href="#studyclock" class="w3-bar-item w3-mobile"> Study Clock </a>
-            <a href="#aboutme" class="w3-bar-item w3-mobile"> About Me </a>
-            <a href="#contact" class="w3-bar-item w3-mobile"> Contact </a>
+            <a href="#home" class="w3-bar-item w3-button w3-hover-pale-blue w3-mobile"> Home </a>
+            <a href="#pomodorotechnique" class="w3-bar-item w3-button w3-hover-light-blue w3-mobile"> Pomodoro Technique </a>
+            <a href="#studyclock" class="w3-bar-item w3-button w3-hover-blue w3-mobile"> Study Clock </a>
+            <a href="#aboutme" class="w3-bar-item w3-button w3-hover-cyan w3-mobile"> About Me </a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hover-aqua w3-mobile"> Contact </a>
         </div>
     <!-- Start Content -->
     <div id="home" class="welcome-image">
         <!--Image Slides -->
         <img class=slides src="images/welcome1.png" style="width: 100%">
-        <img class=slides src="images/technique2.png" style="width: 100%">
+        <img class=slides src="images/pomotechnique2.png" style="width: 100%">
         <img class=slides src="images/aboutme3.png" style="width: 100%">
         <script>w3.slideshow(".slides", 6000)</script>
+    </div>
+
+    <!-- Pomodoro Technique -->
+    <div id="pomodorotechnique" class="w3-row w3-padding-64">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <img src="images/technique.jpg" class="w3-round w3-image w3-opacity-min" alt="Technique" style="width: 100%">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+        <h3 class="w3-center">What is the Pomodoro Technique?</h3><br>
+        <p class="w3-large">The pomodoro technique was invented by Francesco Cirillo in the late 1980s during 
+        his time as a university student. The technique is essentially “divide and conquer”. Studies have found 
+        that utilizing in 25 minute intervals with allotted break times, can increase concentration, promote productivity 
+        and decrease procrastination.</p>
+        <p class="w3-large">Learn more from the expert himself:</p>
+        <p><a href="https://francescocirillo.com/pages/pomodoro-technique" target="_blank" rel="noopener noreferrer">Francesco Cirillo </a></p>
+      </div>
     </div>
 </body>
 
