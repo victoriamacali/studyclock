@@ -1,0 +1,23 @@
+/* audio player padding*/
+aside {
+    float: right;
+    padding: 60px;
+    width: 90%;
+    background-color: #f1f1f1;
+  }
+  
+  nav {
+    float: right;
+    width: 100%;
+    background: #B1CEFF;
+    padding: 30px;
+  }
+
+
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {
+    height:13px;
+    width:13px;
+    padding:0}
