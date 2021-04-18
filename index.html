@@ -3,7 +3,10 @@
 <meta charset="UTF-8">
 <title>Study Timer</title>
 <meta name="viewport" content="width=device-width, intial-scale=1">
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+<script src="main.js"></script>
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 
 
@@ -40,6 +43,136 @@
         <p class="w3-large">Learn more from the expert himself:</p>
         <p><a href="https://francescocirillo.com/pages/pomodoro-technique" target="_blank" rel="noopener noreferrer">Francesco Cirillo </a></p>
       </div>
+    </div>
+    
+    <!-- Study Clock Timer -->
+    <div id="studyclock" class="w3-container w3-padding-16">
+        <main class="pomodoro-clock">
+            <style>
+                .wrap{
+                    display: inline-block;
+                    min-width: 360px;
+                    min-height: 400px;
+                    padding: 50px 15px;
+                    background-color: #fff;
+                    box-shadow: 0 5px 25px #0000004a;
+                    border-radius: 8px;
+                    text-align: center;
+                }
+                #timer{
+                    position: relative;
+                    width: 250px;
+                    height: 250px;
+                    line-height: 250px;
+                    border-radius: 50%;
+                    font-size: 32px;
+                    margin: 0 auto;
+                    background-color: #fff;
+                }
+                .option a{
+                    display: inline-block;
+                    margin: 0 10px;
+                    text-decoration: none;
+                }
+                #play,#reset{
+                    width: 55px;
+                    height: 55px;
+                    line-height: 55px;
+                    border-radius: 50px;
+                    color: #fff;
+                    background: linear-gradient(45deg, #CDDCEF, #B1CEFF);
+                    box-shadow: 0 8px, 25px #233C67, 0 8px 25px #233C67;
+                    transition: all ease 0.1s;
+                }
+                #stop{
+                    padding: 15px 20px;
+                    border-radius: 50px;
+                    color: #fff;
+                    font-weight: 400;
+                    background: linear-gradient(45deg, #CDDCEF, #B1CEFF);
+                    box-shadow: 0 8px, 25px #233C67, 0 8px 25px #233C67;
+                    transition: all ease 0.1s;
+                }
+                #play:active, #reset:active, #stop:active{
+                    transform: scale(0.95);
+                }
+                #stop .fa{
+                    margin-right: 5px;
+                }
+                .fa-play{
+                    padding-left: 5px;
+                }
+                /* Circle Animation*/
+                #timer svg{
+                    position: absolute;
+                    left: 0;
+                }
+                .defaultCircle{
+                    opacity: .3;
+                }
+            </style>
+            <section class="clock">
+                <div class="wrap">
+                    <div id="timer">
+                        <svg width="260" height="260">
+                            <circle class="defaultCircle" cx="125" cy="125" r="120" stroke="#ff88fb"
+                            stroke-width="10" fill="none" stroke-linecap="round"/>
+                        </svg>
+
+                        <span id="hour">00 :</span>
+                        <span id="minute">00 :</span>
+                        <span id="second">00</span>
+                    </div>
+                    <p>Start your Pomodoro Session now </p>
+                    <div class="option">
+                        <a id="play" onclick="playFunc();" href="javascript:void()"><i class="fa fa-play"></i></a>
+                        <a id="stop" href="javascript:void()"><i class="fa fa-stop"></i></a>
+                        <a id="reset" href="javascript:void()"><i class="fa fa-undo"></i></a>
+                    </div>
+                    <script>
+                        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"</script>
+                    <script>
+                        var base;
+                        var playPause = 0;
+
+                        function playFunc(){
+                            play();
+                            playPause = playPause + 1;
+
+                            if(playPause === 1){
+                                document.getElementById("play").classList.add("pause");
+                            } else if (playPause === 2){
+                                document.getElementById("play").classList.remove("pause"); 
+                                playPause = 0;
+                                stop();                              
+                            }
+                        }
+
+                        function play(){
+                        
+                        }
+
+                        function stop(){
+
+                        }
+                        var second = 0;
+                        var minute = 0;
+                        var hour = 0;
+
+                        var secondVal= 0;
+                        var minuteVal = 0;
+                        var hourVal = 0;
+
+                        function timer(){
+                            
+                        }
+
+                    </script>
+                </div>
+            </section>
+            
+
+        </main>
     </div>
 
     <!-- About Me -->
