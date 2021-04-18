@@ -8,6 +8,9 @@
     <link rel="mystylesheet" href="style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
 </head>
 <script src="main.js"></script>
 <script src="https://www.w3schools.com/lib/w3.js"></script>
@@ -15,6 +18,9 @@
 .mySlides {display:none}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
+body{
+  font-family: 'Nunito', sans-serif;
+}
 </style>
 <body>
   <body>
@@ -60,8 +66,8 @@
             <audio controls autoplay>
                 <source src="audio/code-fi lofi beats to coderelax to.mp3" type="audio/mpeg">
             </source></audio>
-            <p>Enjoy some code-fi music while you study! Like what you're hearing?</p>
-            <p><a href="https://youtu.be/f02mOEt11OQ" target="_blank" rel="noopener noreferrer">Visit The AMP Channel on Youtube</a></p>
+            <p class="w3-large">Enjoy some code-fi music while you study! Like what you're hearing?</p>
+            <h6><a href="https://youtu.be/f02mOEt11OQ" target="_blank" rel="noopener noreferrer">Visit The AMP Channel on Youtube</a></h6>
         </section>
 
       </div>
@@ -76,13 +82,14 @@
             .wrap{
                 align-items: center;
                 display: inline-block;
-                min-width: 400px;
-                min-height: 400px;
+                width: 90%;
+                height: 60%;
                 padding: 50px 15px;
                 background-color: #93b0e2;
                 box-shadow: 0 15px 15px #0000004a;
                 border-radius: 8px;
                 text-align: center;
+                flex-shrink: 0;
 
               }
 
@@ -146,9 +153,9 @@
     <div id="moreinfo" class="w3-row w3-padding-64"></div>
     <aside>
       <h1 class="w3-center">More Info</h1>
-      <p><img style="float: right; margin: 0px 0px 15px 15px;" src="images/aboutme.png" width="50%" />
-        Why the blue color theme? Shades of blue are said to be the calmest colors. The blue color palette which is seen all throughout this website is on purpose. The reason 
-        for this Study Clock tool is to be used during study periods and what could be more calming than lofi and your favorite shade of blue&#128153;</p>
+      <h3 class="w3-left">Why all the blue colors?</h3><br>
+      <h5 class="w3-left"><img style="float: right; margin: 0px 0px 20px 20px;" src="images/aboutme.png" width="50%" />Shades of blue are said to be the calmest colors. The blue color palette which 
+        is seen all throughout this website is on purpose. The reason for this Study Clock tool is to be used during study periods & what's more calming than lofi and your favorite shade of blue&#128153;!</h4>
       
     </aside>
     <!-- Footer -->

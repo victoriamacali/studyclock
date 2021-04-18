@@ -24,7 +24,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: "Lato", sans-serif;
 }
 
 button {
@@ -36,10 +35,6 @@ button {
   color: white;
   -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
-}
-
-button:hover {
-  color: #f79415;
 }
 
 header {
