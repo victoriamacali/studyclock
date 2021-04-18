@@ -1,4 +1,3 @@
-import { LightningElement, api} from 'lwc';
 $( document ).ready(() => {
     const timeLabel = $("#timer-label");
     const timeLeft = $("#time-left");
@@ -164,4 +163,3 @@ $( document ).ready(() => {
     breakLength.text('5');
     sessionLength.text('25');
   });
-  
