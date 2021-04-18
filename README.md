@@ -9,3 +9,6 @@ Being an engineering student myself, I know how hard it is to stay focused on al
 This website will include background information of the technique, myself and resoruces like a timer 
 and music to code along to.
 
+Utilized w3schools and freeCodeCamp projects
+Used CSULB FTP to upload to the internet
+
