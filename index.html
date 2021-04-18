@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
 <title>Study Timer</title>
-<meta name="viewport" content="width=device-width, intial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="mystylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<script src="main.js"></script>
 <script src="https://www.w3schools.com/lib/w3.js"></script>
-
 
 <body>
     <!-- Navigation Bar -->
@@ -42,19 +47,97 @@
       </div>
     </div>
 
+
+  <div class="container d-flex flex-column justify-content-center">
+  <!-- Study Clock Timer -->
+  <div id="studyclock">
+    <main class="pomodoro-clock">
+        <style>
+            .wrap{
+                display: inline-block;
+                min-width: 400px;
+                min-height: 400px;
+                padding: 50px 15px;
+                background-color: #B1CEFF;
+                box-shadow: 0 15px 15px #0000004a;
+                border-radius: 8px;
+                text-align: center;
+              }
+        </style>
+
+        <section>
+            <div class="wrap">
+                <div id="timer">        
+                <div class="counter" id="timer-display-div">
+                  <div>
+                    <h5>Start your Pomodoro Session now </h5>
+                      <h1><span id="time">25:00</span></h1>
+                  <div class="srt-btn-div" id="stop-start">
+                    <button class="startbutton btn btn-success btn-lg" value="5">Start</button>
+                    <button class="btn btn-danger btn-lg" value="6" >Reset</button>
+                  </div>
+                </div>
+            
+                <div class="button-parent justify-content-around d.flex row" id="time-change-button"> 
+                <div class="break-div col-sm-6 col justify-content-center"> 
+                
+            <div> 
+              <h5>Break Timer</h5>
+            </div>
+
+            <div class="d.flex justify-content-center row">
+              <div class="reduce-break-button-div"><button class="reduce-break btn" id="btmin" value="1">&LT;</button></div>
+              <div class="increase-break-button-div"><button class="increase-break btn btn-secondary" id="btpls" value="2">&GT;</button></div>
+            </div>
+
+           <div class=""> 
+           <div class="display-break-time-div"><h4><span class="break-timer-span">5</span> Minutes</h4></div>
+      </div>
+      </div>
+
+          <div class="work-time col-sm-6 col justify-content-center" > 
+          <div> 
+            <h5> Active Timer</h5>
+          </div>
+
+          <div class="d.flex justify-content-center row"> 
+            <div class="reduce-active-button-div"><button class="reduce-session btn" id="atmin" value="3">&LT;</button></div>
+            <div class="increase-active-button-div"><button class="increase-session btn btn-secondary" id="atmax" value="4">&GT;</button></div>
+          </div>
+        
+        <div class="display-active-time-div"> 
+          <h4><span class="active-timer-span">25</span> Minutes</h4>
+        </div>
+      </div> 
+
+    </div> 
+  </div> 
+</div>
+</div>
+</section>
+</section>
+</main>
+</div>
+
+    
+    <div class="container d-flex flex-column justify-content-center">
+    <!-- Audio Player-->
+            <div class="w3-col m6 w3-padding-large w3-hide-small">
+                <nav>
+                    <audio controls autoplay>
+                        <source src="audio/code-fi lofi beats to coderelax to.mp3" type="audio/mpeg">
+                    </source></audio>
+                    <p>Enjoy some code-fi music while you study! Like what you're hearing?</p>
+                    <p><a href="https://youtu.be/f02mOEt11OQ" target="_blank" rel="noopener noreferrer">Visit The AMP Channel on Youtube</a></p>
+                     </ul>
+                </nav>
+            
+            </div>
+        
+    
     <!-- About Me -->
     <div id="aboutme" class="w3-container w3-padding-32">
-        <section>
-            <nav>
-                <ul>
-                <audio controls autoplay>
-                    <source src="audio/code-fi lofi beats to coderelax to.mp3" type="audio/mpeg">
-                </source></audio>
-                <p>Enjoy some code-fi music while you study! Like what you're hearing?</p>
-                <p><a href="https://youtu.be/f02mOEt11OQ" target="_blank" rel="noopener noreferrer">Visit The AMP Channel on Youtube</a></p>
-                 </ul>
-            </nav>
-        
+        <section>     
             <article>
             <h1 class="w3-center">About Me</h1>
             <p>Welcome to my Studdy Clock Page! My name is Victoria Macali and I created this website 
@@ -64,6 +147,10 @@
          </section>
          <h3 class="w3-center"> Happy Studying!</h3>
     </div>
-</body>
 
+  <script type="text/javascript" src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
 </html>
