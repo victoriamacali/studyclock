@@ -34,11 +34,11 @@
   <img class="mySlides" src="images/pomotechnique2.png" style="width:100%">
   <img class="mySlides" src="images/aboutme3.png" style="width:100%">
   <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <div class="w3-left w3-hover-text-blue" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-blue" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-cyan" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-cyan" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-cyan" onclick="currentDiv(3)"></span>
   </div>
 </div>
 
@@ -56,13 +56,13 @@
         and decrease procrastination.</p>
         <p class="w3-large">Learn more from the expert himself:</p>
         <p><a href="https://francescocirillo.com/pages/pomodoro-technique" target="_blank" rel="noopener noreferrer">Francesco Cirillo </a></p>
-        <nav>
+        <section>
             <audio controls autoplay>
                 <source src="audio/code-fi lofi beats to coderelax to.mp3" type="audio/mpeg">
             </source></audio>
             <p>Enjoy some code-fi music while you study! Like what you're hearing?</p>
             <p><a href="https://youtu.be/f02mOEt11OQ" target="_blank" rel="noopener noreferrer">Visit The AMP Channel on Youtube</a></p>
-        </nav>
+        </section>
 
       </div>
     </div>
@@ -74,6 +74,7 @@
     <main class="pomodoro-clock">
         <style>
             .wrap{
+                align-items: center;
                 display: inline-block;
                 min-width: 400px;
                 min-height: 400px;
@@ -84,10 +85,11 @@
                 text-align: center;
 
               }
+
         </style>
 
         <section>
-            <div class="wrap">
+            <div class="wrap ">
                 <div id="timer">        
                 <div class="counter" id="timer-display-div">
                   <div>
@@ -150,12 +152,14 @@
       
     </aside>
     <!-- Footer -->
+    <div id="contact" class="w3-row w3-padding-64"></div>
     <footer>
-        <a href="https://www.linkedin.com/in/victoria-macali/" target="_blank" rel="noopener noreferrer" >
-        <img  alt="linkedin" src="images/1.png" width="50" height="50">
-        <a href="https://github.com/victoriamacali/studyclock" target="_blank" rel="noopener noreferrer">
-        <img  alt="linkedin" src="images/2.png" width="50" height="50">
+      <p class="text-center">© Victoria Macali 2021 | &#129419; | Designed for <a href="https://www.beachhacks.com/" target="_blank" rel="noopener noreferrer">BeachHacks</a> &#129416;</p>
         <address>
+          <a href="https://www.linkedin.com/in/victoria-macali/" target="_blank" rel="noopener noreferrer" >
+            <img  alt="linkedin" src="images/1.png" width="50" height="50">
+            <a href="https://github.com/victoriamacali/studyclock" target="_blank" rel="noopener noreferrer">
+            <img  alt="linkedin" src="images/2.png" width="50" height="50">
              <a href="mailto:victoriatmacali@gmail.com">
             <img  alt="email" src="images/3.png" width="50" height="50"> </a>
         </address>
