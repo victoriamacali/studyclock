@@ -1,4 +1,7 @@
 # studyclock
+CSULB BeachHacks 2021 - Best BeachHacks Winner:
+https://devpost.com/software/student-study-clock
+
 HTML website of a student study timer for BeachHacks submission
 
 Here is the link to the website:
