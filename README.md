@@ -5,7 +5,7 @@ https://devpost.com/software/student-study-clock
 HTML website of a student study timer for BeachHacks submission
 
 Here is the link to the website:
-https://web.csulb.edu/~026340182/studyclock/
+https://home.csulb.edu/~026340182/htdocs/studyclock/
 
 This project is based on the Pomodoro Technique, essentially a "divide and conquer" approach to studying. 
 Being an engineering student myself, I know how hard it is to stay focused on all upcomong assignments. 
